@@ -2,6 +2,18 @@
 
 Curso de la version de Webpack 4.
 
+## generar public key para github
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+git add .
+git commit -m "firt commit"
+git remote add origin git@github.com:hackchan/webpack-4
+git push -u origin master
+
+git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+```
+
 ## Comandos Utilizados en el curso
 
 ver la documentacion de [npm](https://docs.npmjs.com/) para ampliar lq informacion.
@@ -9,7 +21,12 @@ ver la documentacion de [npm](https://docs.npmjs.com/) para ampliar lq informaci
 ```bash
 node -v
 npm -v
-npm install webpack --save  --save-exact
+npm install --save-dev  --save-exact webpack
+npm i -D -E webpack
+i  => install
+-S => --save  (esta por defecto si no se especifica ninguna)
+-D => --save-dev
+-E => --save-exact
 ```
 
 ## Usage
