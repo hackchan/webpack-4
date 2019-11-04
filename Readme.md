@@ -16,13 +16,16 @@ git config --global alias.superlog "log --graph --abbrev-commit --decorate --dat
 
 ## Comandos Utilizados en el curso
 
-ver la documentacion de [npm](https://docs.npmjs.com/) para ampliar lq informacion.
+ver la documentacion de [npm](https://docs.npmjs.com/) para ampliar la informacion.
 
 ```bash
 node -v
 npm -v
 npm install --save-dev  --save-exact webpack
 npm i -D -E webpack
+npm i -D -E webpack-cli
+npx webpack -v (como el webpack-cli no se instalo de forma global lo ejecutamos con npx)
+npx webpack --entry ./src/js/index.js --output ./src/js/bundle.js --mode development
 i  => install
 -S => --save  (esta por defecto si no se especifica ninguna)
 -D => --save-dev
